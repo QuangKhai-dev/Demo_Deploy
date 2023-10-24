@@ -1,0 +1,50 @@
+.btn-contact {
+  @include styleButton(274px,68px,270px,64px,1.25rem,23px);
+}
+.btn-contact-2 {
+    @include styleButton(173px,59px,170px,56px,1.125rem,21px)
+  }
+.btn-contact-3{
+  @include styleButton(270px,68px,266px,64px,1.25rem,23px);
+}
+.btn-arrows{
+    width: max-content;
+    height: max-content;
+    padding: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &.btn-arrows-prev-1{
+      right: 200px;
+    }
+    &.btn-arrows-next-1{
+      right: 160px;
+    }
+  }
+.btn-contact-info-1{
+  @include styleContactButton(#F2BF49,#000,28px)
+}
+.btn-contact-info-2{
+  @include styleContactButton(#3884FD,#fff,31px)
+}
+//############################## RESPONSIVE ###################################
+// Màn hình Tablet
+@media screen and (max-width:1199.98px){
+
+}
+// Màn hình mobile
+@media screen and (max-width:767.98px){
+  .btn-contact{
+    @include styleButton(214.82px,56px,209.82px,51px,16px,18.75px)
+  }
+  .btn-contact-3{
+    @include styleButton(180px,51px,177.37px,48px,1rem,18.75px);
+    a{
+      font-size: 1rem;
+    }
+  }
+ 
+}

@@ -1,0 +1,68 @@
+#section-images{
+    padding-top: 108px;
+    padding-bottom: 110px;
+    .title{
+        margin-bottom: 56px;
+    }
+    h2{
+        margin-bottom: 0;
+    }
+    .images-carousel-item{
+        position: relative;
+        height: 512px;
+        padding: 0 35px;
+        .desc-item{
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateX(100%);
+        }
+    }
+    .item-1,.item-4,item-7{
+        width: 605px;
+    }
+    .item-2,.item-5,.item-8{
+        width: 420px;
+        display: flex;
+        align-items: end;
+    }
+    .item-3,.item-6,.item-9{
+        width: 451px;
+        img{
+            margin-top: 35px;
+        }
+    }
+    //############################## RESPONSIVE ###################################
+// Màn hình Tablet
+@media screen and (max-width:1199.98px){
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+// Màn hình mobile
+@media screen and (max-width:767.98px){
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .item-1,.item-4,.item-7{
+        width: 233.99px;
+    }
+    .item-2,.item-5,.item-8{
+        width: 169.84px;
+    }
+    .item-3,.item-6,.item-9{
+        width: 187.01px;
+        img{
+            margin-top: 11px;
+        }
+    }
+    .images-carousel-item{
+        height: 213px;
+        padding: 0 15px;
+        img{
+            width: 100%;
+        }
+    }
+}
+}

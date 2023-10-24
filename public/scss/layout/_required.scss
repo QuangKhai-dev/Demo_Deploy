@@ -1,0 +1,177 @@
+#section-required {
+  padding-top: 130px;
+  padding-bottom: 150px;
+  background-image: url("/public/img/required-bg.png");
+  background-size: cover;
+  .container-1170{
+    overflow: unset;
+  }
+  .row {
+    --bs-gutter-x: 30px;
+  }
+  .required-item {
+    background-color: #fff;
+    padding: 54px 65px 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    .img {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 36px;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      padding-top: 24px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 77px;
+        height: 3px;
+        background-color: $yellowColor1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      h3 {
+        font-size: 2rem;
+        text-transform: capitalize;
+      }
+      .sub-title {
+        font-size: 1.25rem;
+        line-height: 1.172;
+      }
+    }
+    &::before {
+      content: "";
+      background-image: url(/public/img/icon/check-mark.png);
+      width: 124px;
+      height: 124px;
+      background-size: cover;
+      position: absolute;
+      bottom: 21px;
+      right: 15px;
+    }
+  }
+  .col-12 {
+    &:nth-child(2) {
+      .required-item {
+        .img {
+          width: 85px;
+        }
+      }
+    }
+  }
+  //############################## RESPONSIVE ###################################
+  // Màn hình Tablet
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: url("/public/img/required-bg-2.jpeg");
+    .row {
+      align-items: center;
+      justify-content: center;
+    }
+    .col-12 {
+      width: 100%;
+      height: 292px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      .required-item {
+        height: 100%;
+      }
+    }
+    .required-item {
+      padding: 30px 0 36px;
+      width: 344px;
+      overflow: hidden;
+      &::before {
+        width: 140px;
+        right: -7px;
+        bottom: 4px;
+      }
+      .content {
+        flex-grow: 1;
+        padding-top: 30px;
+        // justify-content: space-evenly;
+        h3 {
+          font-size: 1.125rem;
+          height: 52.72px;
+          line-height: 52.72px;
+        }
+        .sub-title {
+          font-size: unset;
+          height: 31.91px;
+          line-height: 31.91px;
+        }
+      }
+    }
+  }
+  // Màn hình mobile
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 70px;
+
+    .required-item {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 45px;
+      &::before{
+        display: none;
+      }
+      .img {
+        width: 45px !important;
+        height: 45px;
+        overflow: hidden;
+        margin-bottom: unset;
+        display: flex;
+        align-items: center;
+        margin-right: 26px;
+      }
+      .content {
+        flex-grow: unset;
+        padding-top: 0;
+        align-items: unset;
+        padding-left: 26px;
+        h3 {
+          font-size: 1.75rem;
+          line-height: 1.4;
+          height: max-content;
+          margin-bottom: 0;
+        }
+        .sub-title {
+          font-size: 1.125rem;
+          line-height: 1.4;
+        }
+        &::before {
+          width: 48px;
+          height: 5px;
+          top: 50%;
+          left: 0;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+    .col-12{
+      height: 118px;
+      margin-bottom: 20px;
+      &:last-child{
+        .required-item{
+          .content{
+            .sub-title{
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

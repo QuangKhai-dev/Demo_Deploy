@@ -1,0 +1,104 @@
+#section-banner {
+  margin-top: 88px;
+  background-image: url("/public/img/banner-bg.jpeg");
+  height: 710px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container-1170:first-child {
+    padding-top: 127px;
+    h1 {
+      .hight-light {
+        z-index: 5;
+        &::after {
+          bottom: 2px;
+        }
+      }
+      &:first-child {
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: calc(1.875rem + 10px);
+        margin-bottom: 20px;
+      }
+      &:nth-child(2) {
+        font-size: 3.125rem;
+        font-weight: 900;
+        line-height: 80px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 48px;
+        span {
+          position: relative;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  //############################## RESPONSIVE ###################################
+  // Màn hình Tablet
+  @media screen and (max-width: 1199.98px) {
+    height: 537px;
+    margin-top: 65px;
+    background-image: url("/public/img/banner-bg-2.jpeg");
+    .container-1170:first-child {
+      padding-top: 88px;
+      h1 {
+        &:first-child {
+          font-size: 1.25rem;
+          line-height: 1.172;
+          margin-bottom: 16px;
+        }
+        &:nth-child(2) {
+          font-size: 2rem;
+          line-height: 1.785;
+          margin-bottom: 43px;
+        }
+      }
+    }
+  }
+  // Màn hình mobile
+  @media screen and (max-width: 767.98px) {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 50px;
+    height: 620px;
+    background-position-x: 75%;
+    .container-1170 {
+      height: 100%;
+      padding-right: 25px;
+      padding-left: 25px;
+      background: linear-gradient(
+        39.46deg,
+        rgba(255, 255, 255, 0.65) 9.51%,
+        rgba(255, 255, 255, 0.65) 108.13%,
+        rgba(255, 255, 255, 0) 108.14%
+      );
+      &:first-child {
+        padding-top: 47px;
+        h1 {
+          &:first-child {
+            font-size: 1.625rem;
+            margin-bottom: 20px;
+          }
+          &:nth-child(2) {
+            font-size: 2.25rem;
+            max-width: 251.32px;
+          }
+        }
+      }
+      .btn-contact {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: unset !important;
+      }
+    }
+  }
+}

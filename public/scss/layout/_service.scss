@@ -1,0 +1,105 @@
+#section-services{
+    transform: translateY(-50%);
+    .services {
+        .row {
+          --bs-gutter-x: 30px;
+        }
+        .service-item {
+          position: relative;
+          border: 2px solid #000000;
+          background-color: $yellowColor1;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: 6px;
+          padding: 24px 23px;
+          .title {
+            font-size: 1.375rem;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+          }
+          .sub-title {
+            font-weight: 500;
+            line-height: 26px;
+            text-transform: uppercase;
+            
+          }
+          img{
+            position: absolute;
+            bottom: 23px;
+            right: 23px;
+        }
+       
+        }
+      }
+      //############################## RESPONSIVE ###################################
+// Màn hình Tablet
+@media screen and (max-width:1199.98px){
+  transform: translateY(-20%);
+  .services{
+    .col-6{
+      margin-bottom: 30px;
+    }
+    .service-item{
+      padding: 20px 26px;
+      min-height: 131px;
+      .title{
+        font-size: 1.375rem;
+        line-height: 1.27;
+        br{
+          display: none;
+        }
+      }
+
+    }
+  }
+}
+// Màn hình mobile
+@media screen and (max-width:767.98px){
+  transform: translateY(-70%);
+  .services {
+    .service-item {
+      padding: 11px 11px;
+      min-height: 78px;
+      .title{
+        font-size: 0.8125rem;
+        line-height: 1.538;
+        br{
+          display: block;
+        }
+      }
+      .sub-title{
+        font-size: 0.625rem;
+        line-height: 2;
+      }
+    }
+    .col-6{
+      margin-bottom: 9px;
+      &:nth-child(1){
+        img{
+          width: 26.03px;
+        }
+      }
+      &:nth-child(2){
+        img{
+          width: 20.57px;
+        }
+      }
+      &:nth-child(3){
+        img{
+          width: 21px;
+        }
+      }
+      &:nth-child(4){
+        img{
+          width: 18px;
+        }
+      }
+    }
+    .row{
+      --bs-gutter-x: 9px;
+    }
+  }
+}
+}
