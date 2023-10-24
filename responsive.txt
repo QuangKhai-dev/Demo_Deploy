@@ -1,9 +1,0 @@
-//############################## RESPONSIVE ###################################
-// Màn hình Tablet
-@media screen and (max-width:1199.98px){
-
-}
-// Màn hình mobile
-@media screen and (max-width:767.98px){
-
-}
